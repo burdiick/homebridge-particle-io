@@ -8,6 +8,7 @@ class ActorAccessory extends Accessory {
 
     this.function_name = !device.function_name ? 'power' : device.function_name;
     this.actorService = new ServiceType(this.name);
+
     this.actorService.getCharacteristic(CharacteristicType)
                      .on('set', this.setState.bind(this))
                      .on('get', this.getState.bind(this));

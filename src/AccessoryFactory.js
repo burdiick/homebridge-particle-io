@@ -6,6 +6,7 @@ const HumiditySensorAccessory = require('./HumiditySensorAccessory.js');
 const TemperatureSensorAccessory = require('./TemperatureSensorAccessory.js');
 const LightSensorAccessory = require('./LightSensorAccessory.js');
 const MotionSensorAccessory = require('./MotionSensorAccessory.js');
+const GarageOpenerAccessory = require('./GarageOpenerAccessory.js');
 
 const accessoryRegistry = {
   lightbulb: LightbulbAccessory,
@@ -15,7 +16,8 @@ const accessoryRegistry = {
   temperaturesensor: TemperatureSensorAccessory,
   humiditysensor: HumiditySensorAccessory,
   lightsensor: LightSensorAccessory,
-  motionsensor: MotionSensorAccessory
+  motionsensor: MotionSensorAccessory,
+  garageopener: GarageOpenerAccessory
 };
 
 class AccessoryFactory {
