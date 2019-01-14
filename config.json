@@ -1,0 +1,36 @@
+{
+   "bridge": {
+     "name": "Gate",
+     "username": "CC:22:3D:E3:CE:40",
+     "port": 51826,
+     "pin": "031-45-156"
+   },
+
+   "description": "This is an example configuration file with one Particle platform and 3 accessories, two lights and a temperature sensor. You should replace the access token and device id placeholder with your access token and device id",
+
+   "platforms": [
+     {
+       "platform": "ParticleIO",
+       "name": "Particle Devices",
+       "access_token": "142638d3200d8212af56d4dbbe817f6be467b0d5",
+       "cloud_url": "https://api.particle.io/v1/devices/",
+       "devices": [
+         {
+           "name": "Gate",
+           "type": "garageopener",
+           "device_id": "38002b001247363335343834",
+           "function_name": "toggleGarage",
+           "event_name": "currentstate",
+           "args": "0={STATE}"
+         },
+         {
+           "name": "Outside",
+           "type": "temperaturesensor",
+           "device_id": "38002b001247363335343834",
+           "event_name": "tvalue",
+           "split_character": ":"
+         }
+       ]
+     }
+   ]
+ }
